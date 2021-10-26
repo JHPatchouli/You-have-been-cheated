@@ -3,21 +3,31 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>你被骗了</title>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <title>你被骗了-5秒后Give You Up</title>
+            <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
     </head>
-
+	
     <body>
-	<div style="width: 400px;height: 300px;border:2px solid black;position:absolute;left: 0;top: 0;bottom: 0;right: 0;margin: auto;">
-		<video style="width: 400px;height: 300px;border:2px solid black;position:absolute;left: 0;top: 0;bottom: 0;right: 0;margin: auto;" id="video1" autoplay="autoplay" controls="controls" src="https://send.itzmx.com/files/KO6HrTTbzzjxE1oucWtjNiV.jpg" type="video/mp4">
-    		</video>
-		<img src="http://git.mrhao.xyz/You-have-been-cheated/r.png">
-	</div>
-	<script type="text/javascript">
-    		$(function(){
-		var video = document.getElementById("video1");
-        	video.play();
-    	});
-    </body>
+ <p style=" text-align:center;">
+	<img src="http://git.mrhao.xyz/You-have-been-cheated/r.png"><br>不扫码<b id="second">5</b>秒后Give You Up
+ </p>
+  
+<script type="text/javascript"> 
+  
+ var sec = document.getElementById("second");
+ var i = 5;
+ var timer = setInterval(function(){
+ i--;
+ sec.innerHTML = i;
+ if(i==1){
+  window.location.href = "https://www.msunlock.cf/cheated.mp4";
+ }
+ },1000);
+ </script> 
+ </body>
 
 </html>
